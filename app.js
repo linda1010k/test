@@ -89,6 +89,8 @@ app.get('/API/addMember', (req, res) => {
 app.get('*', (req, res) => {  
     res.send('No Content');  
 });
-let port = process.env.port || 3000;
-app.listen(port); 
-console.log("Hello world");
+
+app.set('port', process.env.PORT || 3000);
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
