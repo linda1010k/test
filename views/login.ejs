@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html>  
+    <html lang="en">    
+    <head>  
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Linda Lai">
+        <title>Linda's Web</title>  
+        <link rel="icon" href="image/title.ico" type="image/x-icon">
+        <link rel="stylesheet" href="login.css"> 
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body class="text-center">
+        <form class="form-login">
+            <div id="wrapper">
+                <div id="container">
+                    <h1>Login in.</h1>
+                </div>
+            </div>
+            <div class="login-form">
+                <form action="/login" method="POST">
+                    <input class="form-control" type="text" id="username" name="username" placeholder="Username" required>
+                    <input class="form-control" type="password" id="password" name="password" placeholder="Password" required>
+                    <div class="checkbox mb-3">
+                        <label>
+                          <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    <p class="mt-5 mb-3 text-muted">Linda Lai &copy; 2020</p>
+                </form>
+            </div>
+        </form>
+        
+         
+    </body>  
+</html> 
