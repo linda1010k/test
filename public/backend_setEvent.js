@@ -4,7 +4,7 @@ for (let i = 0; i < cross.length; i++) {
     test.stopPropagation();
     let id = cross[i].getAttribute("cross-id");
     console.log(id);
-    let apiUrl = `https://git.heroku.com/practiceproject001.git/API/deleteMember?id=${id}`;
+    let apiUrl = `https://practiceproject001.herokuapp.com/API/deleteMember?id=${id}`;
     let res = await fetch(apiUrl, { method: "GET" });
     let text = await res.text();
     console.log(text);
